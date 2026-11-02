@@ -17,7 +17,7 @@ Usage::
     'andgravity'
 
 ..
-    Originally implemented for https://github.com/lemon24/reader/issues/358.
+    Originally implemented for https://github.com/Alcides1123/reader/issues/358.
 
 """
 
@@ -67,7 +67,7 @@ def _make_tag(reader, slug):
 def _get_tags(reader, resource):
     prefix = _make_tag(reader, '')
     # filter tags by prefix would make this faster,
-    # https://github.com/lemon24/reader/issues/309
+    # https://github.com/Alcides1123/reader/issues/309
     return (t for t in reader.get_tag_keys(resource) if t.startswith(prefix))
 
 if __name__ == '__main__':

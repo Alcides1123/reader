@@ -85,7 +85,7 @@ def debug_maxrss_mib():
 
 @blueprint.app_template_filter()
 def log_scale(n, p=2):
-    # https://github.com/lemon24/reader/issues/249#issuecomment-893440484
+    # https://github.com/Alcides1123/reader/issues/249#issuecomment-893440484
     # https://math.stackexchange.com/a/970251
     # https://math.stackexchange.com/a/3428961
     n = float(n)
@@ -104,7 +104,7 @@ def stream_template(template_name_or_list, **kwargs):
     # Ensure flashed messages get removed from the session,
     # otherwise they keep adding up and never disappear.
     # Assumes the template will call get_flashed_messages() at some point.
-    # https://github.com/lemon24/reader/issues/81
+    # https://github.com/Alcides1123/reader/issues/81
     get_flashed_messages()
 
     template = current_app.jinja_env.get_template(template_name_or_list)
@@ -365,7 +365,7 @@ def preview():
         # give plugins a chance to intercept this
         got_preview_parse_error.send(e)
 
-    # https://github.com/lemon24/reader/issues/172
+    # https://github.com/Alcides1123/reader/issues/172
     # no plugin intercepted the response, so we show the feed;
     # feed.last_exception will be checked in the template,
     # and if there was a ParseError, it will be shown
@@ -735,7 +735,7 @@ def change_feed_url(data):
     feed_url = data['feed-url']
     new_feed_url = data['new-feed-url'].strip()
     # TODO: when there's a way to validate URLs, use it
-    # https://github.com/lemon24/reader/issues/155#issuecomment-673694472
+    # https://github.com/Alcides1123/reader/issues/155#issuecomment-673694472
     get_reader().change_feed_url(feed_url, new_feed_url)
 
 

@@ -53,7 +53,7 @@ def dummy_ddl_transaction(db):
             marks=pytest.mark.xfail(
                 "sys.implementation.name == 'pypy' "
                 # For some reason, this doesn't work:
-                # https://travis-ci.org/github/lemon24/reader/jobs/684668462
+                # https://travis-ci.org/github/Alcides1123/reader/jobs/684668462
                 # "and sys.pypy_version_info <= (7, 2, 0)",
                 # strict=True,
             ),

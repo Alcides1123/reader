@@ -79,7 +79,7 @@ It is rigorously tested on Python |min_python|\+ and PyPy.
 
 
 .. _Read the Docs: https://reader.readthedocs.io/
-.. _GitHub: https://github.com/lemon24/reader
+.. _GitHub: https://github.com/Alcides1123/reader
 .. _PyPI: https://pypi.org/project/reader/
 
 

@@ -84,7 +84,7 @@ but I will prioritize supporting :doc:`contributors <contributing>`
 
     `Open issues`_ and :ref:`Design notes`.
 
-.. _open issues: https://github.com/lemon24/reader/issues
+.. _open issues: https://github.com/Alcides1123/reader/issues
 
 
 .. _cli roadmap:
@@ -334,9 +334,9 @@ It is unlikely I'll write a SQLAlchemy storage myself,
 since I don't need it (yet),
 and I think testing it with multiple databases would take quite some time.
 
-.. _the beginning: https://github.com/lemon24/reader/tree/afbc10335a45ec449205d5757d09cc4a3c6596da/reader
-.. _wanted: https://github.com/lemon24/reader/blame/99077c7e56db968cb892353075426bc5b0b141f1/README.md#L9
-.. _I had in mind: https://github.com/lemon24/reader/issues/168#issuecomment-642002049
+.. _the beginning: https://github.com/Alcides1123/reader/tree/afbc10335a45ec449205d5757d09cc4a3c6596da/reader
+.. _wanted: https://github.com/Alcides1123/reader/blame/99077c7e56db968cb892353075426bc5b0b141f1/README.md#L9
+.. _I had in mind: https://github.com/Alcides1123/reader/issues/168#issuecomment-642002049
 
 
 .. _multiple storage implementations:
@@ -481,7 +481,7 @@ From the initial issue:
 Enabling search by default, and alternative search APIs: :issue:`252`.
 
 Change tracking API: :issue:`323#issuecomment-1930756417`, model validated in
-`this gist <https://gist.github.com/lemon24/558955ad82ba2e4f50c0184c630c668c>`_.
+`this gist <https://gist.github.com/Alcides1123/558955ad82ba2e4f50c0184c630c668c>`_.
 
 External resources:
 
@@ -601,7 +601,7 @@ Feed updates
 
 Some thoughts about adding a ``map`` argument: :issue:`152#issuecomment-606636200`.
 
-How ``update_feeds()`` is like a pipeline: `comment <https://github.com/lemon24/reader/blob/1.13/src/reader/core.py#L629-L643>`_.
+How ``update_feeds()`` is like a pipeline: `comment <https://github.com/Alcides1123/reader/blob/1.13/src/reader/core.py#L629-L643>`_.
 
 Data flow diagram for the update process, as of v1.13: :issue:`204#issuecomment-779709824`.
 
@@ -650,7 +650,7 @@ how to expose said statistics: :issue:`254#issuecomment-1807064610`.
 Notebook with a successful attempt to determine a feed "usefulness" score
 based on how many entries I mark as read / important / don't care;
 highlights a number of gaps in the *reader* API:
-https://gist.github.com/lemon24/93222ef4bc4a775092b56546a6e6cd0f
+https://gist.github.com/Alcides1123/93222ef4bc4a775092b56546a6e6cd0f
 
 
 Using None as a special argument value

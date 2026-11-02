@@ -25,7 +25,7 @@ from ._storage._html_utils import get_soup
 class Link:
     """Data type representing a link."""
 
-    # TODO: unify with Enclosure and https://github.com/lemon24/reader/issues/320 links
+    # TODO: unify with Enclosure and https://github.com/Alcides1123/reader/issues/320 links
 
     #: The link URL.
     href: str
@@ -121,7 +121,7 @@ def from_html(content: AnyMarkup, encoding: str | None = None) -> list[Link]:
         list(Link): A list of links.
 
     """
-    # per https://github.com/lemon24/reader/issues/404#issuecomment-4492060583
+    # per https://github.com/Alcides1123/reader/issues/404#issuecomment-4492060583
 
     soup = get_soup(content, from_encoding=encoding)
 

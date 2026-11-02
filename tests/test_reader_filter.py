@@ -247,7 +247,7 @@ def test_entries_error(reader, get_entries, kwargs):
 
 
 def test_entries_empty_string(reader, parser):
-    """https://github.com/lemon24/reader/issues/392"""
+    """https://github.com/Alcides1123/reader/issues/392"""
 
     reader.add_feed(parser.feed(1))
     parser.entry(1, 1)
@@ -343,7 +343,7 @@ def test_feeds_error(reader, kwargs):
 
 
 def test_feeds_empty_string(reader, parser):
-    """https://github.com/lemon24/reader/issues/392"""
+    """https://github.com/Alcides1123/reader/issues/392"""
 
     reader.add_feed(parser.feed(1))
 

@@ -80,7 +80,7 @@ class FeedsMixin(StorageBase):
                 rowcount_exactly_one(cursor, lambda: FeedNotFoundError(old))
 
             # Some of the fields are not kept from the old feed; details:
-            # https://github.com/lemon24/reader/issues/149#issuecomment-700532183
+            # https://github.com/Alcides1123/reader/issues/149#issuecomment-700532183
             db.execute(
                 """
                 UPDATE feeds

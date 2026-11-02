@@ -285,11 +285,11 @@ def test_get_feeds_order_title(reader, parser, chunk_size):
     * feed user_title or feed title; feeds that have neither should appear first
     * feed URL
 
-    https://github.com/lemon24/reader/issues/29
-    https://github.com/lemon24/reader/issues/102
+    https://github.com/Alcides1123/reader/issues/29
+    https://github.com/Alcides1123/reader/issues/102
 
     """
-    # for https://github.com/lemon24/reader/issues/203
+    # for https://github.com/Alcides1123/reader/issues/203
     reader._storage.chunk_size = chunk_size
 
     feed2 = parser.feed(2, datetime(2010, 1, 2), title='two')
@@ -316,7 +316,7 @@ def test_get_feeds_order_title_case_insensitive(reader, parser):
     """When sort='title', feeds should be sorted by title in a case
     insensitive way.
 
-    https://github.com/lemon24/reader/issues/103
+    https://github.com/Alcides1123/reader/issues/103
 
     """
     feed1 = parser.feed(1, datetime(2010, 1, 1), title='aaa')
@@ -339,7 +339,7 @@ def test_get_feeds_order_added(reader, parser):
     * feed added, descending
     * feed URL
 
-    https://github.com/lemon24/reader/issues/98
+    https://github.com/Alcides1123/reader/issues/98
 
     """
     reader._now = lambda: datetime(2010, 1, 1)
@@ -916,7 +916,7 @@ def test_change_feed_url_tags(reader):
 def test_updates_enabled(reader, parser):
     """Test Feed.updates_enabled functionality.
 
-    https://github.com/lemon24/reader/issues/187#issuecomment-706539658
+    https://github.com/Alcides1123/reader/issues/187#issuecomment-706539658
 
     """
     one = parser.feed(1, datetime(2010, 1, 1))

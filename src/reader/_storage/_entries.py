@@ -165,7 +165,7 @@ class EntriesMixin(StorageBase):
     ) -> Iterable[EntryForUpdate | None]:
         # Fetching everything in a single query is not much faster.
         # Also, the maximum number of SQL variables can be as low as 999.
-        # See https://github.com/lemon24/reader/issues/109 for details.
+        # See https://github.com/Alcides1123/reader/issues/109 for details.
         # See e39b0134cb3a2fe2bb346d42355a764181926a82 for a single query version.
 
         def row_factory(_: sqlite3.Cursor, row: sqlite3.Row) -> EntryForUpdate:
@@ -608,7 +608,7 @@ def entries_recent_sort(
 def entries_random_sort(query: Query) -> None:
     # TODO: "order by random()" always goes through the full result set,
     # which is inefficient; details:
-    # https://github.com/lemon24/reader/issues/105#issue-409493128
+    # https://github.com/Alcides1123/reader/issues/105#issue-409493128
     #
     # This is a separate function in the hope that search
     # can benefit from future optimizations.

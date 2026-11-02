@@ -238,7 +238,7 @@ KWARGS_AND_EXPECTED_ENTRY_COUNTS = [
 @pytest.fixture(scope='module')
 def reader_entry_counts():
     # TODO: testing everything all at once like this is kinda brittle
-    # https://github.com/lemon24/reader/pull/342#discussion_r1649614984
+    # https://github.com/Alcides1123/reader/pull/342#discussion_r1649614984
 
     with make_reader(':memory:') as reader:
         reader._parser = parser = Parser().with_titles()

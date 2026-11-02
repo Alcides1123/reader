@@ -152,7 +152,7 @@ def create_indexes(db: sqlite3.Connection) -> None:
 
 
 def update_from_36_to_37(db: sqlite3.Connection, /) -> None:  # pragma: no cover
-    # for https://github.com/lemon24/reader/issues/279
+    # for https://github.com/Alcides1123/reader/issues/279
     db.execute("ALTER TABLE entries ADD COLUMN recent_sort TIMESTAMP;")
     db.execute("""
         UPDATE entries
@@ -164,7 +164,7 @@ def update_from_36_to_37(db: sqlite3.Connection, /) -> None:  # pragma: no cover
 
 
 def update_from_37_to_38(db: sqlite3.Connection, /) -> None:  # pragma: no cover
-    # https://github.com/lemon24/reader/issues/254#issuecomment-1404215814
+    # https://github.com/Alcides1123/reader/issues/254#issuecomment-1404215814
 
     entries_table.create(db, 'new_entries')
     db.execute("""
@@ -236,7 +236,7 @@ def update_from_37_to_38(db: sqlite3.Connection, /) -> None:  # pragma: no cover
 
 
 def update_from_38_to_39(db: sqlite3.Connection, /) -> None:  # pragma: no cover
-    # https://github.com/lemon24/reader/issues/323
+    # https://github.com/Alcides1123/reader/issues/323
 
     from ._changes import Changes
     from ._search import Search
@@ -274,13 +274,13 @@ def update_from_38_to_39(db: sqlite3.Connection, /) -> None:  # pragma: no cover
 
 
 def update_from_39_to_40(db: sqlite3.Connection, /) -> None:  # pragma: no cover
-    # https://github.com/lemon24/reader/issues/332
+    # https://github.com/Alcides1123/reader/issues/332
     db.execute("ALTER TABLE feeds ADD COLUMN update_after TIMESTAMP;")
     db.execute("ALTER TABLE feeds ADD COLUMN last_retrieved TIMESTAMP;")
 
 
 def update_from_40_to_41(db: sqlite3.Connection, /) -> None:  # pragma: no cover
-    # https://github.com/lemon24/reader/issues/307
+    # https://github.com/Alcides1123/reader/issues/307
 
     import json
 
@@ -311,13 +311,13 @@ def update_from_40_to_41(db: sqlite3.Connection, /) -> None:  # pragma: no cover
 
 
 def update_from_41_to_42(db: sqlite3.Connection, /) -> None:  # pragma: no cover
-    # https://github.com/lemon24/reader/issues/359
+    # https://github.com/Alcides1123/reader/issues/359
     feed_tags_by_key_index.create(db)
     entry_tags_by_key_index.create(db)
 
 
 def update_from_42_to_43(db: sqlite3.Connection, /) -> None:  # pragma: no cover
-    # https://github.com/lemon24/reader/issues/276
+    # https://github.com/Alcides1123/reader/issues/276
     db.execute("ALTER TABLE entries ADD COLUMN source TEXT;")
 
 
@@ -351,7 +351,7 @@ def _migrate_source_author_to_json(
 
 
 def update_from_43_to_44(db: sqlite3.Connection, /) -> None:  # pragma: no cover
-    # https://github.com/lemon24/reader/issues/391
+    # https://github.com/Alcides1123/reader/issues/391
     db.create_function("MIGRATE_AUTHOR", 1, _migrate_author_to_json)
     db.create_function("MIGRATE_SOURCE_AUTHOR", 1, _migrate_source_author_to_json)
     db.execute("UPDATE feeds SET author = MIGRATE_AUTHOR(author);")

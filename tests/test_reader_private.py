@@ -54,7 +54,7 @@ def test_update_stale(reader, parser, update_feed, entry_updated):
     # the only way to check they were updated is through last_updated
 
     # should we deprecate the staleness API? maybe:
-    # https://github.com/lemon24/reader/issues/179#issuecomment-663840297
+    # https://github.com/Alcides1123/reader/issues/179#issuecomment-663840297
     # OTOH, we may still want an update to happen for other side-effects,
     # even if the hash doesn't change
 

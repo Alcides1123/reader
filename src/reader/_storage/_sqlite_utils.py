@@ -70,7 +70,7 @@ def ddl_transaction(db: sqlite3.Connection) -> Iterator[sqlite3.Connection]:
     https://docs.python.org/3.5/library/sqlite3.html#controlling-transactions
 
     """
-    # initialy from https://github.com/lemon24/boomtime/blob/master/boomtime/db.py
+    # initialy from https://github.com/Alcides1123/boomtime/blob/master/boomtime/db.py
     isolation_level = db.isolation_level
     try:
         db.isolation_level = None
@@ -108,7 +108,7 @@ def wrap_exceptions(
         (e.g. SQLITE_CONSTRAINT vs SQLITE_CONSTRAINT_FOREIGNKEY)
       * ProgrammingError usually does not have an error code
 
-    Full discussion at https://github.com/lemon24/reader/issues/21
+    Full discussion at https://github.com/Alcides1123/reader/issues/21
 
     """
     try:
@@ -431,7 +431,7 @@ class LocalConnectionFactory:
     When used as a context manager, don't run optimize regulary,
     and call close() automatically when exiting the with block.
 
-    https://github.com/lemon24/reader/issues/206#issuecomment-1183660880
+    https://github.com/Alcides1123/reader/issues/206#issuecomment-1183660880
 
     """
 
@@ -571,7 +571,7 @@ class LocalConnectionFactory:
 
         # TODO: Once SQLite 3.32 becomes widespread, use "PRAGMA analysis_limit"
         # to prevent "PRAGMA optimize" from taking too long.
-        # https://github.com/lemon24/reader/issues/143#issuecomment-663433197
+        # https://github.com/Alcides1123/reader/issues/143#issuecomment-663433197
 
         # busy_timeout causes PyPy 7.3.9 to segfault during tests
         on_pypy = sys.implementation.name == 'pypy'

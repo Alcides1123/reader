@@ -103,7 +103,7 @@ class HTTPRetriever:
 
     # Details on why the extension methods built into Requests
     # (adapters, hooks['response']) were not enough:
-    # https://github.com/lemon24/reader/issues/155#issuecomment-668716387
+    # https://github.com/Alcides1123/reader/issues/155#issuecomment-668716387
 
     #: Sequence of :class:`RequestHook`\s.
     request_hooks: list[RequestHook] = field(default_factory=list)

@@ -52,7 +52,7 @@ the plugin will run on the next feed update, and remove the tag afterwards.
         and Storage support).
 
 ..
-    Implemented for https://github.com/lemon24/reader/issues/79.
+    Implemented for https://github.com/Alcides1123/reader/issues/79.
 
 """
 

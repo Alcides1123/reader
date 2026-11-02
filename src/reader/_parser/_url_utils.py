@@ -83,7 +83,7 @@ def resolve_root(root: str, path: str) -> str:
     """
 
     # this implementation is based on the requirements / notes in
-    # https://github.com/lemon24/reader/issues/155#issuecomment-672324186
+    # https://github.com/Alcides1123/reader/issues/155#issuecomment-672324186
 
     if not is_abs_path(root):
         raise ValueError(f"root must be absolute: {root!r}")

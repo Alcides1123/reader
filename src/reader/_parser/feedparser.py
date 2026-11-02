@@ -58,8 +58,8 @@ class FeedparserParser:
 
         """
         # feedparser content sanitization and relative link resolution should be ON.
-        # https://github.com/lemon24/reader/issues/125
-        # https://github.com/lemon24/reader/issues/157
+        # https://github.com/Alcides1123/reader/issues/125
+        # https://github.com/Alcides1123/reader/issues/157
         result = feedparser.parse(
             resource,
             resolve_relative_uris=True,
@@ -110,7 +110,7 @@ def _process_feed(url: str, d: Any) -> tuple[FeedData, list[EntryData]]:
             entry = _process_entry(url, d_e, is_rss)
         except ParseError as e:
             # Skip entries that raise ParseError with a warning.
-            # https://github.com/lemon24/reader/issues/281
+            # https://github.com/Alcides1123/reader/issues/281
             warnings.warn(e, stacklevel=1)
             if not first_parse_error:
                 first_parse_error = e
@@ -140,7 +140,7 @@ def _process_entry(feed_url: str, entry: Any, is_rss: bool) -> EntryData:
 
     # <guid> (entry.id) is not actually required for RSS;
     # <link> is, so we fall back to it.
-    # https://github.com/lemon24/reader/issues/170
+    # https://github.com/Alcides1123/reader/issues/170
     # http://www.詹姆斯.com/blog/2006/08/rss-dup-detection
     if not id and is_rss:
         id = entry.get('link')
@@ -238,7 +238,7 @@ def _parse_rss_authors(raw_author: str) -> list[dict[str, str | None]]:
 
 
 def _parse_authors(thing: Any, is_rss: bool) -> tuple[Author, ...]:
-    # see https://github.com/lemon24/reader/issues/391#issuecomment-4413487465
+    # see https://github.com/Alcides1123/reader/issues/391#issuecomment-4413487465
     # for examples of corner cases found in the wild
 
     author_detail = thing.get('author_detail') or {}

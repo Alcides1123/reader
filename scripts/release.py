@@ -141,12 +141,12 @@ def main(version, new_version, date, tox, changelog):
 
     confirm(
         "Approve publish workflow to upload to PyPI.\n  {}\nDone?",
-        "https://github.com/lemon24/reader/actions/workflows/publish.yaml",
+        "https://github.com/Alcides1123/reader/actions/workflows/publish.yaml",
     )
     confirm(
         "Publish draft release {} in GitHub.\n  {}\nDone?",
         version,
-        "https://github.com/lemon24/reader/releases",
+        "https://github.com/Alcides1123/reader/releases",
     )
 
     new_version_full = f"{new_version}.dev0"

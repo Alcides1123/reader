@@ -87,7 +87,7 @@ def _make_pool_map[T, U](
     # because the latter doesn't work on some environments (e.g. AWS Lambda).
     # We are not using executor.map() because it consumes the entire iterable.
 
-    # lazy import (https://github.com/lemon24/reader/issues/297)
+    # lazy import (https://github.com/Alcides1123/reader/issues/297)
     import concurrent.futures
 
     executor = concurrent.futures.ThreadPoolExecutor(workers)

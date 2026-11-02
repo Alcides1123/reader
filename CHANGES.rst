@@ -774,7 +774,7 @@ This release marks *reader*'s `5th anniversary`_ and its 2000th commit.
   don't fail when deserializing tweets with missing ``edit_history_tweet_ids``
   (fails in tweepy 4.11, warns in tweepy >4.12).
 
-.. _5th anniversary: https://github.com/lemon24/reader/commit/73ac0bd3b8d0e5429e0bd7caf5281e4c9c74f16d
+.. _5th anniversary: https://github.com/Alcides1123/reader/commit/73ac0bd3b8d0e5429e0bd7caf5281e4c9c74f16d
 
 
 Version 3.2
@@ -1326,7 +1326,7 @@ Released 2021-08-18
   This is allows supplying a user-defined ``json_array_length`` function
   on platforms where SQLite doesn't come with the JSON1 extension
   (e.g. on Windows with stock Python earlier than 3.9;
-  `details <https://github.com/lemon24/reader/issues/163#issuecomment-895041943>`_).
+  `details <https://github.com/Alcides1123/reader/issues/163#issuecomment-895041943>`_).
 
   Note these globals are private, and thus *not* covered by the
   :ref:`backwards compatibility policy <compat>`.

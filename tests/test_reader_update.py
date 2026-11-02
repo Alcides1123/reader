@@ -613,7 +613,7 @@ def test_duplicate_ids(reader, parser):
 
     This passes before (and after) 3.12, but not in 3.12.
 
-    https://github.com/lemon24/reader/issues/335
+    https://github.com/Alcides1123/reader/issues/335
 
     """
     old_parse = parser.parse
@@ -674,7 +674,7 @@ def test_concurrent_update(monkeypatch, db_path, make_reader, parser, new):
 
     This passes before (and after) 3.12, but not in 3.12.
 
-    https://github.com/lemon24/reader/issues/335
+    https://github.com/Alcides1123/reader/issues/335
 
     """
     reader = make_reader(db_path)
@@ -1192,7 +1192,7 @@ def test_set_update_interval_down(reader, parser):
 def test_updates_enabled_scheduled(reader, parser):
     """Bug: updates_enabled=True was not working when scheduled=True.
 
-    https://github.com/lemon24/reader/issues/365
+    https://github.com/Alcides1123/reader/issues/365
 
     """
     reader._now = lambda: datetime(2010, 1, 1)

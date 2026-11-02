@@ -51,10 +51,10 @@ from .types import TagFilterInput
 from .types import TristateFilterInput
 
 # Private API
-# https://github.com/lemon24/reader/issues/111
+# https://github.com/Alcides1123/reader/issues/111
 
 # structure similar to
-# https://github.com/lemon24/reader/issues/159#issuecomment-612512033
+# https://github.com/Alcides1123/reader/issues/159#issuecomment-612512033
 
 
 @dataclass(frozen=True)
@@ -514,7 +514,7 @@ TristateFilter = Literal[
 
 
 def tristate_filter_argument(value: TristateFilterInput, name: str) -> TristateFilter:
-    # https://github.com/lemon24/reader/issues/254#issuecomment-1435648359
+    # https://github.com/Alcides1123/reader/issues/254#issuecomment-1435648359
     if value is None:
         return 'any'
     if value == True:  # noqa: E712
@@ -1298,7 +1298,7 @@ class ChangeTrackerType(Protocol):
     .. seealso::
 
         The model was validated using property-based testing
-        in `this gist <https://gist.github.com/lemon24/558955ad82ba2e4f50c0184c630c668c>`_.
+        in `this gist <https://gist.github.com/Alcides1123/558955ad82ba2e4f50c0184c630c668c>`_.
 
     .. rubric:: API considerations
 

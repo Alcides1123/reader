@@ -59,8 +59,8 @@ autodoc_mock_imports = [
 master_doc = 'index'
 
 project = 'reader'
-copyright = '2018, lemon24'
-author = 'lemon24'
+copyright = '2018, Alcides1123'
+author = 'Alcides1123'
 
 version_parsed = packaging.version.parse(reader.__version__)
 version = version_parsed.base_version
@@ -109,8 +109,8 @@ if GOOGLE_SITE_VERIFICATION:
 
 branch = 'master' if version_parsed.is_devrelease else release
 extlinks = {
-    'issue': ('https://github.com/lemon24/reader/issues/%s', '#%s'),
-    'gh': (f"https://github.com/lemon24/reader/tree/{branch}/%s", '%s'),
+    'issue': ('https://github.com/Alcides1123/reader/issues/%s', '#%s'),
+    'gh': (f"https://github.com/Alcides1123/reader/tree/{branch}/%s", '%s'),
 }
 
 
@@ -125,7 +125,7 @@ htmlhelp_basename = 'readerdoc'
 
 latex_elements = {}
 latex_documents = [
-    (master_doc, 'reader.tex', 'reader Documentation', 'lemon24', 'manual')
+    (master_doc, 'reader.tex', 'reader Documentation', 'Alcides1123', 'manual')
 ]
 
 

@@ -43,7 +43,7 @@ The read time for existing entries is backfilled as follows:
 
 
 ..
-    Implemented for https://github.com/lemon24/reader/issues/275
+    Implemented for https://github.com/Alcides1123/reader/issues/275
 
 """
 

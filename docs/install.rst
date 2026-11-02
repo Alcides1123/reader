@@ -120,4 +120,4 @@ install or update from the ``master`` branch:
 
 .. code-block:: bash
 
-    pip install --upgrade https://github.com/lemon24/reader/archive/master.tar.gz
+    pip install --upgrade https://github.com/Alcides1123/reader/archive/master.tar.gz
