@@ -14,7 +14,7 @@ will have the same hash if they have the same attribute/value pairs.
 
 Design choices explained in https://death.andgravity.com/stable-hashing
 
-Implemented for https://github.com/lemon24/reader/issues/179
+Implemented for https://github.com/Alcides1123/reader/issues/179
 
 """
 

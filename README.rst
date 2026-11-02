@@ -14,12 +14,12 @@ you'd probably call it a fat model.
 |build-status-github| |code-coverage| |documentation-status| |pypi-status| |type-checking| |code-style|
 
 
-.. |build-status-github| image:: https://github.com/lemon24/reader/workflows/build/badge.svg
-  :target: https://github.com/lemon24/reader/actions?query=workflow%3Abuild
+.. |build-status-github| image:: https://github.com/Alcides1123/reader/workflows/build/badge.svg
+  :target: https://github.com/Alcides1123/reader/actions?query=workflow%3Abuild
   :alt: build status (GitHub Actions)
 
-.. |code-coverage| image:: https://codecov.io/gh/lemon24/reader/branch/master/graph/badge.svg?token=lcLZaSFysf
-  :target: https://codecov.io/gh/lemon24/reader
+.. |code-coverage| image:: https://codecov.io/gh/Alcides1123/reader/branch/master/graph/badge.svg?token=lcLZaSFysf
+  :target: https://codecov.io/gh/Alcides1123/reader
   :alt: code coverage
 
 .. |documentation-status| image:: https://readthedocs.org/projects/reader/badge/?version=latest&style=flat

@@ -23,7 +23,7 @@ To load::
     READER_WEB_PLUGINS='reader._plugins.legacy.preview_feed_list' \\
     python -m reader serve
 
-Implemented for https://github.com/lemon24/reader/issues/150.
+Implemented for https://github.com/Alcides1123/reader/issues/150.
 
 """
 
@@ -111,7 +111,7 @@ def feed_list():
     url = request.args['url']
 
     # TODO: url may not actually be an http URL; now we get "error: Invalid URL 'file.xml': No schema supplied. ..."
-    # if https://github.com/lemon24/reader/issues/155#issuecomment-647048623 gets implemented,
+    # if https://github.com/Alcides1123/reader/issues/155#issuecomment-647048623 gets implemented,
     # we should delegate to the parser "give me the content of this URL"
 
     with get_reader()._parser.get_retriever('http://') as retriever:

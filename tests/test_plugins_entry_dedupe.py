@@ -148,7 +148,7 @@ def test_duplicates_change_during_update(
 def test_feed_duplicates_dont_flip_flop(
     reader, with_plugin, parser, allow_short_content, add_third_entry
 ):
-    # https://github.com/lemon24/reader/issues/340
+    # https://github.com/Alcides1123/reader/issues/340
     # TODO: also test the .dedupe.once behavior
 
     reader.add_feed(parser.feed(1))

@@ -271,7 +271,7 @@ def paginated_query[T](
     to avoid locking the database for too long.
     Reading the entire result can consume too much memory,
     and doesn't fix the locking issue for big queries anyway
-    Also see https://github.com/lemon24/reader/issues/167.
+    Also see https://github.com/Alcides1123/reader/issues/167.
 
     """
     remaining = limit

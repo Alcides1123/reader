@@ -100,7 +100,7 @@ from .exceptions import (
 
 # Constants.
 
-SOURCE_URL = 'https://github.com/lemon24/reader'
+SOURCE_URL = 'https://github.com/Alcides1123/reader'
 USER_AGENT = f'python-reader/{__version__} (+{SOURCE_URL})'
 
 

@@ -50,7 +50,7 @@ def strip_html(html: AnyMarkup, **kwargs: Any) -> str:
 
 
 def get_soup(html: AnyMarkup, **kwargs: Any) -> bs4.BeautifulSoup:
-    # lazy import (https://github.com/lemon24/reader/issues/297)
+    # lazy import (https://github.com/Alcides1123/reader/issues/297)
     import bs4
 
     return bs4.BeautifulSoup(html, **kwargs)

@@ -75,7 +75,7 @@ class Search:
     Originally done in #122. Updated to use the change tracking API in #323.
 
     Schema changes must be added to a Storage migration, example:
-    https://github.com/lemon24/reader/blob/3.12/src/reader/_storage/_schema.py#L258-L265
+    https://github.com/Alcides1123/reader/blob/3.12/src/reader/_storage/_schema.py#L258-L265
 
     Add a test_search.py::test_errors_locked test for each new public method.
 
@@ -191,7 +191,7 @@ class Search:
             # ANALYZE or indirectly via PRAGMA OPTIMIZE.
             #
             # For more information, see:
-            #  - https://github.com/lemon24/reader/issues/348
+            #  - https://github.com/Alcides1123/reader/issues/348
             #  - https://sqlite.org/forum/forumpost/5414ca8f89389f8a
             db.execute("DROP TABLE IF EXISTS search.sqlite_stat1;")
             db.execute("DROP TABLE IF EXISTS search.sqlite_stat2;")
@@ -290,10 +290,10 @@ class Search:
         #
         # Since 3.11, the search index is in a separate, attached database,
         # so we don't care about locking that one that much.
-        # https://gist.github.com/lemon24/c57b3772ed5a36aabfe723df9820d6bc
+        # https://gist.github.com/Alcides1123/c57b3772ed5a36aabfe723df9820d6bc
 
         # split in a separate loop in preparation for future optimization
-        # https://github.com/lemon24/reader/issues/323#issuecomment-1930756417
+        # https://github.com/Alcides1123/reader/issues/323#issuecomment-1930756417
         entries = {}
         for change in changes:
             # ignore non-entry changes

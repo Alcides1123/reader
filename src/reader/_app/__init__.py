@@ -47,7 +47,7 @@ from .forms import EntryFilter
 from .forms import FeedFilter
 
 # for a prototype with tags and search support, see
-# https://github.com/lemon24/reader/tree/3.21/src/reader/_app/v2
+# https://github.com/Alcides1123/reader/tree/3.21/src/reader/_app/v2
 
 
 blueprint = Blueprint(
@@ -396,7 +396,7 @@ def stream_template(template_name_or_list, **kwargs):
     # Ensure flashed messages get removed from the session,
     # otherwise they keep adding up and never disappear.
     # Assumes the template will call get_flashed_messages() at some point.
-    # https://github.com/lemon24/reader/issues/81
+    # https://github.com/Alcides1123/reader/issues/81
     get_flashed_messages()
 
     # Ensure the CSRF session token is set.

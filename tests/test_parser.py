@@ -288,7 +288,7 @@ def test_parse_bad_status(
     monkeypatch, parse, make_http_url_bad_status, data_dir, status
 ):
     """parse() should raise ParseError for 4xx or 5xx status codes.
-    https://github.com/lemon24/reader/issues/182
+    https://github.com/Alcides1123/reader/issues/182
 
     """
     feed_url = make_http_url_bad_status(data_dir.joinpath('full.atom'), status)
@@ -523,7 +523,7 @@ def test_feedparser_parse_call(monkeypatch, parse, make_url, data_dir, exc_cls):
     """feedparser.parse must always be called with True
     resolve_relative_uris and sanitize_html.
 
-    https://github.com/lemon24/reader/issues/125#issuecomment-522333200
+    https://github.com/Alcides1123/reader/issues/125#issuecomment-522333200
 
     """
     exc = exc_cls("whatever")
@@ -549,7 +549,7 @@ def test_feedparser_parse_call(monkeypatch, parse, make_url, data_dir, exc_cls):
 
 def test_missing_entry_id():
     """Handle RSS entries without guid.
-    https://github.com/lemon24/reader/issues/170
+    https://github.com/Alcides1123/reader/issues/170
 
     """
     # For RSS, when id is missing, parse() falls back to link.
@@ -1321,7 +1321,7 @@ def test_feedparser_parse_authors_rss():
         Author(name='Jane Doe', href=None, email=None),
     )
 
-    # bug https://github.com/lemon24/reader/issues/405
+    # bug https://github.com/Alcides1123/reader/issues/405
     assert _parse_authors({'author': 'John Doe (detail) (email)'}, is_rss=True) == (
         Author(name='John Doe (detail)', href=None, email='email'),
     )

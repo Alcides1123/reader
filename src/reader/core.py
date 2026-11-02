@@ -274,7 +274,7 @@ def make_reader(
     # we'll need to do the wiring differently.
     #
     # See this comment for details on how it should evolve:
-    # https://github.com/lemon24/reader/issues/168#issuecomment-642002049
+    # https://github.com/Alcides1123/reader/issues/168#issuecomment-642002049
 
     storage: StorageType = _storage or Storage(
         url, read_only=read_only, migrate=migrate
@@ -1528,8 +1528,8 @@ class Reader:
 
         # `entry` is of type EntryDataLikeProtocol | EntryDataTypedDict,
         # but modeling that is pretty cumbersome; we can do it later if needed;
-        # https://github.com/lemon24/reader/issues/239#issuecomment-951892271
-        # https://gist.github.com/lemon24/047f71abe76c47661634459eada7b50a#file-01-typing-py
+        # https://github.com/Alcides1123/reader/issues/239#issuecomment-951892271
+        # https://gist.github.com/Alcides1123/047f71abe76c47661634459eada7b50a#file-01-typing-py
 
         now = self._now()
         entry_data = entry_data_from_obj(entry)

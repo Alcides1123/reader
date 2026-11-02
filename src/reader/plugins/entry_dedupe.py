@@ -129,12 +129,12 @@ To reduce false positives:
     Increase required minimum content length from 32 to 48 words.
 
 ..
-    Implemented for https://github.com/lemon24/reader/issues/79.
-    Deleting entries in https://github.com/lemon24/reader/issues/140.
-    On-demand dedupe in https://github.com/lemon24/reader/issues/202.
-    More selection heuristics in https://github.com/lemon24/reader/issues/371.
+    Implemented for https://github.com/Alcides1123/reader/issues/79.
+    Deleting entries in https://github.com/Alcides1123/reader/issues/140.
+    On-demand dedupe in https://github.com/Alcides1123/reader/issues/202.
+    More selection heuristics in https://github.com/Alcides1123/reader/issues/371.
     Notes on (not implemented) title-only dedupe for mass duplication in
-    https://github.com/lemon24/reader/issues/322.
+    https://github.com/Alcides1123/reader/issues/322.
 
 
 """
@@ -323,9 +323,9 @@ class Config:
 
     Details + more special cases:
 
-    * https://github.com/lemon24/reader/issues/371#issuecomment-3549816117
-    * https://github.com/lemon24/reader/issues/371#issuecomment-3409780383
-    * https://github.com/lemon24/reader/issues/202#issuecomment-904139483
+    * https://github.com/Alcides1123/reader/issues/371#issuecomment-3549816117
+    * https://github.com/Alcides1123/reader/issues/371#issuecomment-3409780383
+    * https://github.com/Alcides1123/reader/issues/202#issuecomment-904139483
 
     On content similarity
     ~~~~~~~~~~~~~~~~~~~~~
@@ -582,8 +582,8 @@ def title_strip_prefix_grouper(entries, new_entries):
 # (but it still has false positives: series, intentional duplicates).
 #
 # [1]: last in 0a63e71d3002f653d6ef86dbc9740e361f0b0f7d
-# [2]: https://github.com/lemon24/reader/issues/371#issuecomment-3549816117
-# [3]: https://gist.github.com/lemon24/a0d8ba030cd416cb7fdc973067938a0c#file-x_fast_bigram_score-py
+# [2]: https://github.com/Alcides1123/reader/issues/371#issuecomment-3549816117
+# [3]: https://gist.github.com/Alcides1123/a0d8ba030cd416cb7fdc973067938a0c#file-x_fast_bigram_score-py
 
 
 def link_grouper(entries, new_entries):
@@ -626,7 +626,7 @@ def published_grouper(entries, new_entries):
 # but that one feed already matched the link and title prefix groupers (YAGNI).
 #
 # [1]: last in 0140613a5258a6df6af070b7c7b38a398824ebcf
-# [2]: https://github.com/lemon24/reader/issues/371#issuecomment-3549816117
+# [2]: https://github.com/Alcides1123/reader/issues/371#issuecomment-3549816117
 
 
 def group_by(keyfn, items, only_items):
@@ -670,7 +670,7 @@ def is_duplicate_entry(entry_one, entry_two):
     # * content prefix becomes full content + different summary (idem)
     # * identical summaries but different content (promo message in summary)
     #
-    # [1]: https://github.com/lemon24/reader/issues/371#issuecomment-3549816117
+    # [1]: https://github.com/Alcides1123/reader/issues/371#issuecomment-3549816117
     #
     long, short = fields_one[-1], fields_two[-1]
     if len(long) < len(short):
@@ -691,7 +691,7 @@ def is_duplicate_entry(entry_one, entry_two):
     #
     # (32 tokens due to historical reasons, increased to 48 following [1].)
     #
-    # [1]: https://github.com/lemon24/reader/issues/371#issuecomment-3549816117
+    # [1]: https://github.com/Alcides1123/reader/issues/371#issuecomment-3549816117
     #
     if min(len(one), len(two)) < MIN_CONTENT_LENGTH:
         return
@@ -705,7 +705,7 @@ def tokenize_content_fields(entry):
     # * some entries have just summary
     # * some entries have just content
     # * sometimes the summary is longer than the content
-    #   (e.g. https://github.com/lemon24/reader/issues/262)
+    #   (e.g. https://github.com/Alcides1123/reader/issues/262)
     #
     values = [entry.summary] + [c.value for c in (entry.content or ())]
     tokenized_values = filter(None, map(tokenize_content, values))
@@ -876,7 +876,7 @@ _IS_DUPLICATE_THRESHOLDS = [
     # since they're more forgiving of small changes (e.g. typos);
     # thresholds based on "reasonable" edits in test_is_duplicate TEXT,
     # in turn tuned to exclude/include the false/true positives in
-    # https://github.com/lemon24/reader/issues/371#issuecomment-3566100718
+    # https://github.com/Alcides1123/reader/issues/371#issuecomment-3566100718
     (12, True, 3, 0.6),
     (20, True, 3, 0.7),
     (40, True, 3, 0.8),
@@ -890,7 +890,7 @@ _IS_DUPLICATE_THRESHOLDS = [
     # thresholds based on the 0.8 value mentioned in [1],
     # but increasing towards 0.9 since 0.8 seems too low, e.g.
     # removing 10 words from the middle of 100 -> similarity 0.84 (n=4)
-    # [1]: https://github.com/lemon24/reader/issues/202#issuecomment-904139483
+    # [1]: https://github.com/Alcides1123/reader/issues/202#issuecomment-904139483
     (2400, False, 4, 0.8),
     (3600, False, 4, 0.85),
     (4800, False, 4, 0.9),

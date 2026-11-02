@@ -153,8 +153,8 @@ If running on a personal computer, you can use cron to run it at boot::
     @reboot     sleep 60; reader web -p 8080 2>&1 ) >>"/tmp/$LOGNAME.reader.web.run.boot.log"
 
 
-.. _here: https://github.com/lemon24/owncloud/blob/8009f227ef60ebaab621e7bb3363ec9071d8a2e8/reader.yaml#L103-L116
-.. _nginx example: https://github.com/lemon24/owncloud/blob/8009f227ef60ebaab621e7bb3363ec9071d8a2e8/secure.conf#L23
+.. _here: https://github.com/Alcides1123/owncloud/blob/8009f227ef60ebaab621e7bb3363ec9071d8a2e8/reader.yaml#L103-L116
+.. _nginx example: https://github.com/Alcides1123/owncloud/blob/8009f227ef60ebaab621e7bb3363ec9071d8a2e8/secure.conf#L23
 .. _Flask documentation: https://flask.palletsprojects.com/en/stable/deploying/
 .. _Werkzeug's development server: https://werkzeug.palletsprojects.com/en/stable/serving/#werkzeug.serving.run_simple
 
@@ -172,7 +172,7 @@ It is usable, if a bit unpolished,
 but was never meant to be a long-term thing,
 hence the new app;
 you can find screenshots
-`here <https://github.com/lemon24/reader/blob/3.21/docs/app.rst#screenshots-legacy>`_.
+`here <https://github.com/Alcides1123/reader/blob/3.21/docs/app.rst#screenshots-legacy>`_.
 
 The WSGI entry point is ``reader._app.legacy.wsgi:app``.
 

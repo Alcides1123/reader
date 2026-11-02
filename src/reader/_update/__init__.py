@@ -123,13 +123,13 @@ class Decider:
 
         # Some feeds have entries newer than the feed;
         # we always update the feed if entries changed, for simplicity.
-        # https://github.com/lemon24/reader/issues/76
+        # https://github.com/Alcides1123/reader/issues/76
         if entries_to_update:
             logger.debug("feed has entries to update, treating as updated")
             return True
 
         # Check if the feed content actually changed:
-        # https://github.com/lemon24/reader/issues/179
+        # https://github.com/Alcides1123/reader/issues/179
         if not old.hash or new.hash != old.hash:
             logger.debug("feed hash changed, treating as updated")
             return True
@@ -138,7 +138,7 @@ class Decider:
         # feedparser user lastBuildDate as .updated,
         # which can change without the feed actually changing,
         # so feed.updated is excluded from the hash.
-        # https://github.com/lemon24/reader/issues/231#issuecomment-812601988
+        # https://github.com/Alcides1123/reader/issues/231#issuecomment-812601988
         if new.updated != old.updated:
             logger.debug("only feed updated changed, skipping")
             return False
@@ -160,19 +160,19 @@ class Decider:
             return UpdateReasons()
 
         # entry.updated was excluded from hash for (fake) symmetry with feed.
-        # https://github.com/lemon24/reader/issues/231#issuecomment-812601988
+        # https://github.com/Alcides1123/reader/issues/231#issuecomment-812601988
         # Unlike feed.updated, we always trust entry.updated (so far).
         if new.updated != old.updated:
             log.debug("entry updated, updating")
             return UpdateReasons()
 
         # Check if the entry content actually changed:
-        # https://github.com/lemon24/reader/issues/179
+        # https://github.com/Alcides1123/reader/issues/179
         #
         # We limit the number of updates due to only the hash changing
         # to prevent spurious updates for entries whose content changes
         # excessively (for example, because it includes the current time).
-        # https://github.com/lemon24/reader/issues/225
+        # https://github.com/Alcides1123/reader/issues/225
         #
         if not old.hash or new.hash != old.hash:
             if (old.hash_changed or 0) < HASH_CHANGED_LIMIT:

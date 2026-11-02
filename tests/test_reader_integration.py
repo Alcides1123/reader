@@ -117,7 +117,7 @@ def test_fixed_headers(reader, data_dir, server):
 
     assert headers[b'User-Agent'] == USER_AGENT.encode()
     assert headers[b'User-Agent'].startswith(b'python-reader/')
-    assert headers[b'User-Agent'].endswith(b' (+https://github.com/lemon24/reader)')
+    assert headers[b'User-Agent'].endswith(b' (+https://github.com/Alcides1123/reader)')
 
     assert headers[b'Accept'] == (
         b'application/atom+xml,application/rdf+xml,application/rss+xml'

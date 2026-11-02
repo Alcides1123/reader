@@ -20,7 +20,7 @@ Servers/CDNs known to not accept the *reader* UA: Cloudflare, WP Engine.
     and change the UA on the first request instead of retrying.
 
 ..
-    Implemented for https://github.com/lemon24/reader/issues/181
+    Implemented for https://github.com/Alcides1123/reader/issues/181
 
 """
 
@@ -39,7 +39,7 @@ def _ua_fallback(session, response, request, **kwargs):
     if not ua:  # pragma: no cover
         return None
 
-    # lazy import (https://github.com/lemon24/reader/issues/297)
+    # lazy import (https://github.com/Alcides1123/reader/issues/297)
     from .._parser.feedparser import feedparser
 
     ua_prefix = feedparser.USER_AGENT.partition(" ")[0]

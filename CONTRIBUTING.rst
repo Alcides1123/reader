@@ -27,7 +27,7 @@ When doing so:
   in the latest `PyPI`_ release
   or in the latest :ref:`pre-release code <install-pre-release>`.
 
-.. _GitHub Issues: https://github.com/lemon24/reader/issues
+.. _GitHub Issues: https://github.com/Alcides1123/reader/issues
 .. _minimal reproducible example: https://stackoverflow.com/help/minimal-reproducible-example
 .. _PyPI: https://pypi.org/project/reader/
 
@@ -38,7 +38,7 @@ Asking questions
 
 Please use `Github Discussions`_ for support or general questions.
 
-.. _GitHub Discussions: https://github.com/lemon24/reader/discussions
+.. _GitHub Discussions: https://github.com/Alcides1123/reader/discussions
 
 
 
@@ -58,9 +58,9 @@ Please use `GitHub Issues`_ to discuss non-trivial changes:
   also see :ref:`roadmap` and :ref:`design notes`.
 * For trivial changes (e.g. typos), you can open a PR directly.
 
-.. _help wanted: https://github.com/lemon24/reader/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22
-.. _good first issue: https://github.com/lemon24/reader/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
-.. _open issues: https://github.com/lemon24/reader/issues
+.. _help wanted: https://github.com/Alcides1123/reader/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22
+.. _good first issue: https://github.com/Alcides1123/reader/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
+.. _open issues: https://github.com/Alcides1123/reader/issues
 
 
 When working on a pull request:
@@ -141,7 +141,7 @@ Set up the repository
 .. _latest version of git: https://git-scm.com/downloads
 .. _username: https://docs.github.com/en/github/using-git/setting-your-username-in-git
 .. _email: https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address
-.. _Fork: https://github.com/lemon24/reader/fork
+.. _Fork: https://github.com/Alcides1123/reader/fork
 .. _Clone: https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#step-2-create-a-local-clone-of-your-fork
 
 

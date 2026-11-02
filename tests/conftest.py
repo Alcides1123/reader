@@ -58,7 +58,7 @@ def pytest_runtest_setup(item):
 def no_sqlite3_adapters(request):
     # bring about the removal of deprecated sqlite3 default adapters
     # (adapters cannot be disabled per-connection like converters)
-    # https://github.com/lemon24/reader/issues/321
+    # https://github.com/Alcides1123/reader/issues/321
     # TODO: remove this once sqlite3 default adapters are removed
     original_adapters = sqlite3.adapters.copy()
     sqlite3.adapters.clear()

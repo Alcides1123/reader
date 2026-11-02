@@ -44,11 +44,11 @@ class _namedtuple_compat:
         return dict(self.__dict__)
 
 
-# See https://github.com/lemon24/reader/issues/159 for a discussion
+# See https://github.com/Alcides1123/reader/issues/159 for a discussion
 # of how feed- and entry-like objects are uniquely identified, and
 # how to keep it consistent.
 
-# See https://github.com/lemon24/reader/issues/153#issuecomment-620228329
+# See https://github.com/Alcides1123/reader/issues/153#issuecomment-620228329
 # for how the feed and entry attributes should match the Atom spec.
 
 
@@ -879,7 +879,7 @@ class EntryLike(Protocol):
     def feed_url(self) -> str: ...
 
 
-# https://github.com/lemon24/reader/issues/266#issuecomment-1013739526
+# https://github.com/Alcides1123/reader/issues/266#issuecomment-1013739526
 type GlobalInput = tuple[()]
 type FeedInput = str | FeedLike
 type EntryInput = tuple[str, str] | EntryLike
@@ -944,7 +944,7 @@ def _resource_argument(resource: ResourceInput) -> ResourceId:
 
 
 # str explicitly excluded, to allow for a string-based query language;
-# https://github.com/lemon24/reader/issues/184#issuecomment-689587006
+# https://github.com/Alcides1123/reader/issues/184#issuecomment-689587006
 
 #: Possible values for filtering resources by their tags.
 #:
@@ -1078,7 +1078,7 @@ class _EntryCountsBase(_namedtuple_compat):
     has_enclosures: int | None = None
 
     # TODO: make averages a rich tuple
-    # https://github.com/lemon24/reader/issues/249#issuecomment-894624989
+    # https://github.com/Alcides1123/reader/issues/249#issuecomment-894624989
 
     #: Average entries per day during the last 1, 3, 12 months, as a 3-tuple.
     #:

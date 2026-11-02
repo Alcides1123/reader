@@ -125,7 +125,7 @@ class Parser:
     def __init__(self) -> None:
         # Typing the link between parser and retriever would be nice,
         # but seems hard to do; for a simplified version of the problem:
-        # https://gist.github.com/lemon24/b9338bea9aef176cbadcbfc25687dcf5
+        # https://gist.github.com/Alcides1123/b9338bea9aef176cbadcbfc25687dcf5
         #
         # Higher Kinded Types might be a way of doing it,
         # https://returns.readthedocs.io/en/latest/pages/hkt.html
@@ -196,7 +196,7 @@ class Parser:
             # we could parallelize parse() as well;
             # however, most of the time is spent in pure-Python code,
             # which doesn't benefit from the threads on CPython:
-            # https://github.com/lemon24/reader/issues/261#issuecomment-956412131
+            # https://github.com/Alcides1123/reader/issues/261#issuecomment-956412131
             parse_results = builtins.map(self.parse_fn, retrieve_results)
 
             # interestingly, if we "yield from ..." instead of
@@ -313,10 +313,10 @@ class Parser:
             # Gives a ~20% speed improvement over yielding response.raw
             # when updating many feeds in parallel,
             # with a 2-8% increase in memory usage:
-            # https://github.com/lemon24/reader/issues/261#issuecomment-956303210
+            # https://github.com/Alcides1123/reader/issues/261#issuecomment-956303210
             #
             # SpooledTemporaryFile() is just as fast as TemporaryFile():
-            # https://github.com/lemon24/reader/issues/261#issuecomment-957469041
+            # https://github.com/Alcides1123/reader/issues/261#issuecomment-957469041
 
             with exiting(context, None):
                 temp = tempfile.TemporaryFile()

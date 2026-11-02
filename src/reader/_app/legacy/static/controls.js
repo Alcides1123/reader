@@ -83,7 +83,7 @@ function register_simple(endpoint, collapsible, callback, errback) {
 
             var request_data = extract_form_data(button.form);
             // We do this here to make sure the form data has the stuff from
-            // *our* control. If https://github.com/lemon24/reader/issues/69
+            // *our* control. If https://github.com/Alcides1123/reader/issues/69
             // is implemented by having one form element per control,
             // this won't be needed anymore.
             update_object(request_data, {action: button.value});
@@ -177,7 +177,7 @@ function register_confirm(endpoint, collapsible, callback, errback) {
 
             var request_data = extract_form_data(button.form);
             // We do this here to make sure the form data has the stuff from
-            // *our* control. If https://github.com/lemon24/reader/issues/69
+            // *our* control. If https://github.com/Alcides1123/reader/issues/69
             // is implemented by having one form element per control,
             // this won't be needed anymore.
             update_object(request_data, {action: button.value});
@@ -233,7 +233,7 @@ function register_text_input(endpoint, collapsible, callback, errback) {
 
             var request_data = extract_form_data(button.form);
             // We do this here to make sure the form data has the stuff from
-            // *our* control. If https://github.com/lemon24/reader/issues/69
+            // *our* control. If https://github.com/Alcides1123/reader/issues/69
             // is implemented by having one form element per control,
             // this won't be needed anymore.
             update_object(request_data, {action: button.value});
@@ -340,7 +340,7 @@ function register_text_confirm(endpoint, collapsible, callback, errback) {
 
             var request_data = extract_form_data(button.form);
             // We do this here to make sure the form data has the stuff from
-            // *our* control. If https://github.com/lemon24/reader/issues/69
+            // *our* control. If https://github.com/Alcides1123/reader/issues/69
             // is implemented by having one form element per control,
             // this won't be needed anymore.
             update_object(request_data, {action: button.value});

@@ -110,7 +110,7 @@ def test_update_search_fails_if_changes_enabled_search_disabled(reader):
     """update_search() should raise if changes is enabled but search is not
     (can happen when restoring from backup).
 
-    https://github.com/lemon24/reader/issues/362
+    https://github.com/Alcides1123/reader/issues/362
 
     """
     reader._storage.changes.enable()
@@ -529,7 +529,7 @@ def test_search_database_is_missing(db_path, make_reader, parser, enable_before_
     """update_search() should work after search database goes missing
     (can happen when restoring from backup).
 
-    https://github.com/lemon24/reader/issues/362
+    https://github.com/Alcides1123/reader/issues/362
 
     """
     reader = make_reader(db_path)
@@ -617,7 +617,7 @@ def test_search_entries_basic(reader, parser, sort):
         # As of reader 1.4 we're not using it anymore, and the workaround
         # was removed; we keep the emoji in case of regressions.
         # Bug: https://bugs.python.org/issue38749
-        # Workaround and more details: https://github.com/lemon24/reader/blob/d4363f683fc18ca12f597809ceca4e7dbd0a303a/src/reader/_sqlite_utils.py#L332
+        # Workaround and more details: https://github.com/Alcides1123/reader/blob/d4363f683fc18ca12f597809ceca4e7dbd0a303a/src/reader/_sqlite_utils.py#L332
         content=[Content('three 🤩 content')],
     )
 

@@ -48,7 +48,7 @@ def reset_logging(pytestconfig):
 def patch_app_dir(monkeypatch, tmp_path):
     """Ignore local config while running tests.
 
-    https://github.com/lemon24/reader/issues/355
+    https://github.com/Alcides1123/reader/issues/355
 
     """
 

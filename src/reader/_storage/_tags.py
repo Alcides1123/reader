@@ -283,7 +283,7 @@ def by_key_filter(
     This filter works with OR queries (`[['one', 'two']]`),
     but not with AND queries (`[['one'], ['two']]`),
     and not with negative queries (`['-one']`).
-    https://github.com/lemon24/reader/issues/359#issuecomment-2446102455
+    https://github.com/Alcides1123/reader/issues/359#issuecomment-2446102455
 
     With this filter, get_feeds(tags=[['one', 'two']]) results in::
 

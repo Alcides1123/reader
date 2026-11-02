@@ -16,8 +16,8 @@ with the same fields as :class:`reader.discover.Link`::
 .. versionadded:: 3.25
 
 ..
-    Implemented for https://github.com/lemon24/reader/issues/404
-    Better version of https://github.com/lemon24/reader/issues/150
+    Implemented for https://github.com/Alcides1123/reader/issues/404
+    Better version of https://github.com/Alcides1123/reader/issues/150
 
 """
 

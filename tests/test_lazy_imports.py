@@ -1,5 +1,5 @@
 """
-See https://github.com/lemon24/reader/issues/297 for details.
+See https://github.com/Alcides1123/reader/issues/297 for details.
 
 """
 
@@ -128,5 +128,5 @@ def test_only_expected_modules_are_imported(code, expected_modules):
     # not using == because imports can vary based on library versions,
     # and we care more about slow stuff being imported accidentally
     # than the other way around
-    # https://github.com/lemon24/reader/issues/349
+    # https://github.com/Alcides1123/reader/issues/349
     assert actual_modules <= expected_modules, expected_modules

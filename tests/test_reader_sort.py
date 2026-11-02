@@ -54,7 +54,7 @@ def test_entries_recent_feed_order(
 ):
     """All other things being equal, entries should be sorted by feed order.
 
-    https://github.com/lemon24/reader/issues/87
+    https://github.com/Alcides1123/reader/issues/87
 
     """
     reader._storage.chunk_size = chunk_size
@@ -85,10 +85,10 @@ def test_entries_recent_all(reader, parser, chunk_size, get_entries, reverse):
     * order of entry in feed
     * entry id
 
-    https://github.com/lemon24/reader/issues/97
-    https://github.com/lemon24/reader/issues/106
-    https://github.com/lemon24/reader/issues/113
-    https://github.com/lemon24/reader/issues/279
+    https://github.com/Alcides1123/reader/issues/97
+    https://github.com/Alcides1123/reader/issues/106
+    https://github.com/Alcides1123/reader/issues/113
+    https://github.com/Alcides1123/reader/issues/279
 
     """
 

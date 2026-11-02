@@ -11,7 +11,7 @@ Deduplicate the enclosures of an entry by enclosure URL.
     There should be a hook for this.
 
 ..
-    Implemented for https://github.com/lemon24/reader/issues/78.
+    Implemented for https://github.com/Alcides1123/reader/issues/78.
 
 """
 
